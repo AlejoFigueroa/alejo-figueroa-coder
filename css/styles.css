@@ -1,0 +1,216 @@
+body{
+    background-color: rgba(253, 132, 119, 0.89);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title-index{
+    text-align: center;
+    font-size: 2em;
+    color: #f0f8ff;
+}
+
+.section-em {
+    font-size: 1.3em;
+    text-align: center;
+    color: #f0f8ff;
+    padding: 0% 20px;
+    margin: 0% 20px;
+}
+
+nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1em;
+} 
+
+
+nav ul li{    
+    display: inline-block;
+    padding: 0% ;
+    font-size: 700;
+    flex-direction: row;
+    margin: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f0f8ff;
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center ;
+
+}
+
+nav img{
+    width: 13em;
+}
+
+footer{
+    color: #f0f8ff;
+}
+
+.titulo-nosotras{   
+    color: #f0f8ff;
+    text-align: center;
+    padding: 0% 30px;
+    margin: 0% 30px;
+}
+.texto-parrafo{
+    color: #f0f8ff;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 0% 20px;
+    margin: 0% 20px;
+}
+
+.imagen-nosotras{   
+    width: 90em;
+    padding: 0% 20px;
+    margin: 0% 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.productos{
+    color: #f0f8ff;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+.velas{ 
+    color: #f0f8ff;
+    text-align: start;
+    padding: 2% 15px;
+    margin: 2% 15px;
+}
+
+.difusores{
+    color: #f0f8ff;
+    text-align: start;
+    padding: 2% 15px;
+    margin: 2% 15px;
+}
+
+.velas-fotos{
+    display: grid;
+    grid-template-columns: 6fr 6fr 6fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+}
+
+.difusores-fotos{   
+    display: grid;
+    grid-template-columns: 6fr 6fr 6fr;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.titulo-faq{    
+    color: #f0f8ff;
+    text-align: center;
+}
+
+.seccion-faq{
+    color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 24px;
+    margin: 0% 20px;
+}
+
+.contactanos{
+    color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0% 24px;
+    margin: 2% 20px;
+}
+
+.formulario{    
+    display: flex;
+    flex-direction: column;
+    color: #f0f8ff;
+}
+
+@media screen and (max-width: 320px){
+    nav{
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+    }
+    nav ul li{  
+        flex-direction: column;
+        margin: 8px;
+    }
+    .imagen-nosotras{   
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        width: 650px;
+    }
+    .velas-fotos{   
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 12px;
+        justify-content: flex-end;
+    }
+    .difusores-fotos{   
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 12px;
+        padding: 16px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px){   
+    nav{    
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+    }
+    .imagen-nosotras{   
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        width: 1000px;
+        justify-content: flex-start;
+        margin: 70px;
+    }
+    .velas-fotos{   
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 20px;
+        justify-content: flex-end;
+        margin: 30px;
+        padding: 30px;
+    }
+    .difusores-fotos{   
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 20px;
+        padding: 30px;
+        margin: 30px;
+        justify-content: center;
+    }
+}
+.preguntas-faq{
+    color: #f0f8ff;
+    text-align: center;
+}
+footer{    
+    height: 150px;
+    padding: 60px;
+}
