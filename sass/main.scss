@@ -1,0 +1,161 @@
+// vars
+$colorMain: rgba(253, 132, 119, 0.89);
+$colortext: #f0f8ff;
+
+
+body{   //indexhtml
+
+    background-color: rgba(253, 132, 119, 0.89);
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+    nav{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 1em;
+    } 
+
+    nav ul li{    
+        display: inline-block;
+        padding: 0% ;
+        font-size: 700;
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: $colortext;
+        justify-content: center;
+    }
+
+    .title-index{
+        text-align: center;
+        font-size: 2em;
+        color:$colortext;
+    }
+
+    .section-em {
+        font-size: 1.3em;
+        text-align: center;
+        color: $colortext;
+        padding: 0% 20px;
+        margin: 0% 20px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center ;
+    
+    }
+
+    nav img{
+        width: 13em;
+    }
+
+    footer{
+        color:$colortext;
+    }
+}
+
+main{  //nosotrashtml
+    
+    .titulo-nosotras{   
+        color: $colortext;
+        text-align: center;
+        padding: 0% 30px;
+        margin: 0% 30px;
+    }
+
+    .texto-parrafo{
+        color:$colortext;
+        font-size: 1.4em;
+        text-align: center;
+        padding: 0% 20px;
+        margin: 0% 20px;
+    }
+
+    .imagen-nosotras{   
+        width: 90em;
+        padding: 0% 20px;
+        margin: 0% 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+main{  //productoshtml
+
+    .productos{
+        color: $colortext;
+        text-align: center;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .velas.difusores{ 
+        color: $colortext;
+        text-align: start;
+        padding: 2% 15px;
+        margin: 2% 15px;
+    }
+
+    .velas-fotos{
+        display: grid;
+        grid-template-columns: 6fr 6fr 6fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+    }
+
+    .difusores-fotos{   
+        display: grid;
+        grid-template-columns: 6fr 6fr 6fr;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
+
+main{    //faqhmtl  
+
+    .titulo-faq{    
+        color: $colortext;
+        text-align: center;
+    }
+
+    .seccion-faq{
+        color: $colortext;
+        display: flex;
+        flex-direction: column;
+        padding: 0% 24px;
+        margin: 0% 20px;
+    }
+
+    .acordion-faq{  
+        margin: 30px 30px;
+        padding: 30px 30px;
+        width: auto;
+    }
+}
+
+section{   //contactohtml
+
+    .contactanos{
+        color:$colortext;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0% 24px;
+        margin: 2% 20px;
+    }
+
+    .formulario{    
+        display: flex;
+        flex-direction: column;
+        color: $colortext;
+        margin: 10px 20px;
+        padding: 30px 30px;
+        text-align: center;
+    }
+}
