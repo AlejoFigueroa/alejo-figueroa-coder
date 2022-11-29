@@ -232,9 +232,9 @@ footer{
         display: flex;
         flex-direction: column;
         grid-template-columns: 1fr;
-        width: 1000px;
+        width: 1400px;
         justify-content: center;
-        /* margin: 100px; */
+        margin: 150px;
     }
     .productos {
         font-size: 2.5em;
