@@ -4,10 +4,8 @@ body {
 }
 body nav {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  margin-left: 1em;
 }
 body nav ul li {
   display: inline-block;
@@ -89,6 +87,23 @@ main .difusores-fotos {
   grid-template-columns: 6fr 6fr 6fr;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+main .titulo-faq {
+  color: #f0f8ff;
+  text-align: center;
+}
+main .seccion-faq {
+  color: #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  padding: 0% 24px;
+  margin: 0% 20px;
+}
+main .acordion-faq {
+  margin: 30px 30px;
+  padding: 30px 30px;
+  width: auto;
 }
 
 section .contactanos {

@@ -30,36 +30,47 @@
 
     </header>
     <main>
-        <section class="formulario">
-            <h1 class="contactanos"><u>contactanos</u></h1>
-            <div class="nombre">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="angela" required>
-            </div>
-            <div class="telefono">
-                <label for="tel">Telefono</label>
-                <input type="tel" id="tel" name="tel" placeholder="11 23456789" required>
-            </div>
-            <div class="mail">
-                <label for="mail">E-mail</label>
-                <input type="email" id="mail" name="mail" placeholder="angela@gmail.com" required>
-            </div>
-            <div class="mensaje">
-                <label for="Mensaje">mensaje</label>
-                <textarea name="Mensaje" id="mensaje" cols="30" rows="10" placeholder="tu mensaje o consulta" required></textarea>
-            </div>
-            <fieldset class="como">
-                <legend>¿Como nos conociste?</legend>
-                <label for="conocer1">Redes sociales</label>
-                <input type="radio" name="conocernos" id="conocer1" value="conocer1">
-                <label for="conocer2">publicidad</label>
-                <input type="radio" name="conocernos" id="conocer2" value="conocer2">
-                <label for="conocer3">recomendacion</label>
-                <input type="radio" name="conocernos" id="conocer3" value="conocer3">
-            </fieldset>
-            <button type="submit" value="enviar">enviar</button>
-            <button type="reset" value="borrar">borrar</button>
-        </section>
+        <div class="contact_form">
+            <div class="formulario">      
+            <h1>Formulario de contacto</h1>
+                <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+        <form action="submeter-formulario.php" method="post">       
+            <p>
+                <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                        </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+            <p>
+                <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                        </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            <p>
+                <label for="telefone" class="colocar_telefono">Teléfono
+                        </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>   
+            <p>
+                <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                        </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+            <p>
+                <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>                     
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                </p>                    
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+            <p class="aviso">
+                    <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+        </form>
+            </div>  
+        </div>
     </main>
     <footer>
         <div class="redes">

@@ -10,11 +10,9 @@ body{   //indexhtml
 
     nav{
         display: flex;
-        flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-        margin-left: 1em;
-    } 
+    }
 
     nav ul li{    
         display: inline-block;
@@ -42,6 +40,7 @@ body{   //indexhtml
         color: $colortext;
         padding: 0% 20px;
         margin: 0% 20px;
+        color: $colortext;
     }
 
     .center {
